@@ -3,8 +3,8 @@ pipeline {
   stages {    
     stage("run frontend") {    
       steps {
-          echo "executing node app..."
-          nodejs('NodeJS'){
+          echo 'executing node app.'
+          nodejs('NodeJS') {
             sh 'npm install'
           }
       }
